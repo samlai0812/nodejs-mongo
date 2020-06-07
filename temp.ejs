@@ -1,0 +1,18 @@
+<% authors.forEach(author => { %>
+    <% if (book.author === author.id){ %>
+        <option selected label="<%= author.name %>" value="<%= author.id %>">
+    <% }else{ %>
+        <option label="<%= author.name %>" value="<%= author.id %>">
+    <% } %>
+<% }) %>
+
+
+
+<% authors.forEach(author => { %>
+    <% if (book.author === author.id){ %>
+        <option selected value="<%= author.id %>"><%= author.name %></option>
+    <% }else{ %>
+        <option value="<%= author.id %>"><%= author.name %></option>
+    <% } %>
+
+<% }) %>
